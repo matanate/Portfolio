@@ -1,0 +1,63 @@
+<header class="d-flex flex-column flex-shrink-0 p-3 xl-hidden">
+  <div class="profile text-center text-white">
+    <img
+      class="profile-img img-fluid rounded-circle"
+      src="{{url_for('static', filename='img/profile-img.jpg')}}"
+      alt="profile img"
+      width="125px"
+      height="125px"
+    />
+    <div class="profile-name fs-4 mt-2">Matan Atedgi</div>
+    <div class="social-links mt-3 text-center">
+      <a
+        href="https://github.com/matanate/"
+        class="github rounded-circle d-inline-block p-1 m-2"
+        target="_blank"
+      >
+        <i class="bi bi-github"></i>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/matan-atedgi/"
+        class="linkedin rounded-circle d-inline-block p-1 m-2"
+        target="_blank"
+      >
+        <i class="bi bi-linkedin"></i>
+      </a>
+    </div>
+  </div>
+  <hr />
+  <ul class="nav nav-pills flex-column mb-auto">
+    <li class="nav-item">
+      <a href="{{url_for('home')}}" class="nav-link" aria-current="page">
+        <i class="bi bi-house me-3" width="20" height="20"></i>
+        Home
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link nav-item-active" aria-current="page">
+        <i class="bi bi-book me-3" width="20" height="20"></i>
+        Portfolio
+      </a>
+    </li>
+  </ul>
+  <div class="portfolios-container" style="max-height: 200px; overflow: auto">
+    <ul class="nav nav-pills flex-column mb-auto">
+      {% for i in port_dict %}
+      <li class="nav-item" id="port-{{i}}">
+        <a
+          class="nav-link {% if i == port_num %}nav-item-active{% endif %} ms-3"
+          aria-current="page"
+          href="{{url_for('portfolio', port_num=i)}}"
+        >
+          <i class="bi bi-link me-3" width="20" height="20"></i>
+          {{port_dict[i]["name"]}}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <hr />
+  <footer>© Copyright <b>Matan Atedgi</b></footer>
+</header>

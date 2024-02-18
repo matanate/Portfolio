@@ -1,0 +1,37 @@
+{% extends "base.html" %} {% block header %}{% include "portfolio-header.html"
+%}{% endblock %}{% block body %}
+<main id="main">
+  <section id="portfolio" class="about">
+    <div class="container">
+      <div class="section-title">
+        <h2>
+          {{port_dict[port_num]["name"]}}
+          <span class="social-links mt-3 text-center">
+            <a
+              href="{{port_dict[port_num]['git_repo']}}"
+              class="github rounded-circle d-inline-block p-1 m-2"
+              target="_blank"
+            >
+              <i class="bi bi-github"></i>
+            </a>
+          </span>
+        </h2>
+        <p>{{port_dict[port_num]["overview"]}}</p>
+      </div>
+
+      {% if port_dict[port_num]["url"] %}
+      <iframe src="{{port_dict[port_num]['url']}}" width="100%"></iframe>
+      {% else %}
+      <video controls="" autoplay="" name="media">
+        <source {% if port_num == 4 %} src="{{ url_for('static',
+        filename='img/portfolio/typingspeedtest_demo.mp4')}}" {% elif port_num
+        == 3 %} src="{{ url_for('static',
+        filename='img/portfolio/watermarker_demo.mp4')}}" {% endif %}
+        type="video/mp4" />
+      </video>
+
+      {% endif %}
+    </div>
+  </section>
+</main>
+{% endblock %}
