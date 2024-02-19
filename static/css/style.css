@@ -236,6 +236,15 @@ footer {
   border-bottom: 3px solid #149ddd;
 }
 
+@media (max-width: 768px) {
+  #hero:before {
+    height: 100vh;
+  }
+
+  #hero {
+    background-attachment: scroll; /* or remove it */
+  }
+}
 
 @media (max-width: 1024px) {
   #hero h1 {
