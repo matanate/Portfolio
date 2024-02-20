@@ -200,6 +200,7 @@ footer {
   content: "";
   background: rgba(5, 13, 24, 0.3);
   position: absolute;
+  height: 100%;
   bottom: 0;
   top: 0;
   left: 0;
@@ -235,9 +236,13 @@ footer {
   border-bottom: 3px solid #149ddd;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 768px) {
+  #hero:before {
+    height: 100vh;
+  }
+
   #hero {
-    background-attachment: fixed;
+    background-attachment: scroll; /* or remove it */
   }
 }
 
