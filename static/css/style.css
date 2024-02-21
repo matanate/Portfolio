@@ -242,7 +242,9 @@ footer {
   }
 
   #hero {
-    background-attachment: scroll; /* or remove it */
+    background-attachment: scroll;
+    transition: background-position 0.5s ease-in-out;
+    background-position: top right -200px;
   }
 }
 
