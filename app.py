@@ -36,7 +36,7 @@ PORT_DICT = {
         "git_repo": "https://github.com/matanate/Watermarker",
         "overview": "The Watermarker is a user-friendly application for adding watermarks to images, allowing customization of various properties such as text, font, color, size, opacity, rotation, and tiling.",
         "preview_img": "watermarker.png",
-        "preview_vid: "watermarker_demo.mp4"
+        "preview_vid": "watermarker_demo.mp4"
         "filters": ["tkinter", "python"],
     },
     5: {
@@ -45,7 +45,7 @@ PORT_DICT = {
         "git_repo": "https://github.com/matanate/Typing_Speed_Test",
         "overview": "The Typing Speed Test App is a simple and interactive application designed to measure and improve your typing speed and accuracy. This app provides a platform for users to practice typing a set of randomly shuffled words and evaluates their typing speed in words per minute (WPM) and characters per minute (CPM).",
         "preview_img": "typingspeedtest.png",
-        "preview_vid: "typingspeedtest_demo.mp4"
+        "preview_vid": "typingspeedtest_demo.mp4"
         "filters": ["games", "tkinter", "python"],
     },
     6: {
