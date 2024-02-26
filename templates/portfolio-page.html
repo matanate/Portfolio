@@ -34,11 +34,8 @@
       <iframe src="{{port_dict[port_num]['url']}}" width="100%"></iframe>
       {% else %}
       <video controls="" autoplay="" name="media">
-        <source {% if port_num == 4 %} src="{{ url_for('static',
-        filename='img/portfolio/typingspeedtest_demo.mp4')}}" {% elif port_num
-        == 3 %} src="{{ url_for('static',
-        filename='img/portfolio/watermarker_demo.mp4')}}" {% endif %}
-        type="video/mp4" />
+        <source src="{{ url_for('static',
+        filename='img/portfolio/' + port_dict[port_num]['preview_vid'])}}"
       </video>
 
       {% endif %}
