@@ -8,7 +8,7 @@ app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 PORT_DICT = {
     1: {
         "name": "Movies & TV Shows Review Database",
-        "url": "https://movie-and-tv-show-database-web.onrender.com/",
+        "url": "https://movietv-yjhw.onrender.com/",
         "git_repo": "https://github.com/matanate/Movie-and-TV-Show-Database-Web-Application",
         "overview": "This is a Flask web application that serves as a movie and TV show database. Users can sign up, log in, search for titles, view details of individual titles, add reviews, and explore the top-rated movies and TV shows. Additionally, administrators have access to functionalities like adding and deleting titles.",
         "preview_img": "movietvdb.png",
@@ -16,7 +16,7 @@ PORT_DICT = {
     },
     2: {
         "name": "Breakout Game",
-        "url": "https://breakout-cxy3.onrender.com/",
+        "url": "https://breakout-g6ru.onrender.com/",
         "git_repo": "https://github.com/matanate/Breakout",
         "overview": "This is a simple implementation of the classic Breakout game using Flask for the backend and JavaScript for the frontend. The game features a paddle, a bouncing ball, and blocks to be cleared. The player's goal is to keep the ball bouncing, hitting and clearing the blocks, while avoiding letting the ball fall off the screen.",
         "preview_img": "breakout.png",
@@ -24,7 +24,7 @@ PORT_DICT = {
     },
     3: {
         "name": "Cafe Database",
-        "url": "https://cafe-db.onrender.com/",
+        "url": "https://cafe-db-pv9g.onrender.com/",
         "git_repo": "https://github.com/matanate/cafe-db",
         "overview": "A Flask web application serving as an interactive café database. Discover random cafés, retrieve details on all cafés, or search by location or name. Ideal for developers looking to incorporate café information into their projects. Examples provided for successful queries and error responses.",
         "preview_img": "cafedb.png",
